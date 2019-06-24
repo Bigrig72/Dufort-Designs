@@ -1,0 +1,77 @@
+﻿@page
+@model ReganDufort.Pages.ContactInfo.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Contact</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<header class="contact-header">
+    <h2 class="dufort-designs">
+        Dufort Designs
+    </h2>
+    <nav class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+        <div class="container">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Blog</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<h1>Contact Regan Dufort</h1>
+<form method="post" asp-route-id="@Model.ID">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="@Model.">First Name</label>
+        <input asp-for="@Model.Contact.FirstName" class="form-control" id="Firstname" placeholder="Enter First Name">
+        <span asp-validation-for="@Model.Contact.FirstName"></span>
+
+        <label asp-for="@Model.Contact.LastName">Last Name</label>
+        <input asp-for="@Model.Contact.LastName" class="form-control" id="Lastname" placeholder="Enter Last Name">
+        <span asp-validation-for="@Model.Contact.LastName"></span>
+
+
+        <label asp-for="@Model.Contact.Email">Email address</label>
+        <input asp-for="@Model.Contact.Email" class="form-control" id="Email" placeholder="name@gmail.com">
+        <span asp-validation-for="@Model.Contact.Email"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Contact.Message">Reason For Contact</label>
+        <textarea asp-for="@Model.Contact.Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <span asp-validation-for="@Model.Contact.Message"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
