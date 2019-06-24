@@ -284,7 +284,7 @@ a:hover {
 .progress {
     height: 20px;
     line-height: 15px;
-    border-radius: 5px;
+    border-radius: 10vw;
     background: #f0f0f0;
     margin-bottom: 30px;
     box-shadow: none;
@@ -296,6 +296,7 @@ a:hover {
     position: relative;
     border-radius: 0;
     opacity: 0;
+    border-radius: 2vw;
 }
 
 section#about-us {
@@ -325,6 +326,20 @@ section#about-us {
     }
 }
 
+.counter-container {
+    position: relative;
+    left: 11vw;
+    top: 68vh;
+    display: flex;
+    justify-content: space-around;
+}
+i.material-icons {
+    font-size: 33px;
+}
+.counter-description {
+    text-align: center;
+    font-size: 3vh;
+}
 
 /*This will be the index styles for landing page*/
     /*-------------------------------------------------------*/

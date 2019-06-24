@@ -6,6 +6,7 @@
 // This is for the slide down nav bar on scroll
 
 
+
 window.onscroll = function () { myFunction() };
 
 // Get the navbar
@@ -81,6 +82,7 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
+// animate the loading bars on scroll when the bars are visible 
 $(document).ready(function () {
     $('.progress-bar').waypoint(function () {
         $('.progress-bar').css({
@@ -90,3 +92,16 @@ $(document).ready(function () {
     }, { offset: '75%' })
 });
 
+// counter up for tracking a counting up counter
+
+//$(document).ready(function () {
+//    $('.counter').counterUp({
+//        delay: 10,
+//        time: 2000
+//    });
+//});
+
+jQuery('.counter').counterUp({
+    delay: 10,
+    time: 2000
+});
