@@ -302,7 +302,7 @@ a:hover {
 section#about-us {
     position: absolute;
     left: 56vw;
-    bottom: 20vw;
+    bottom: 6vw;
 }
 
 .progress .progress-value {
@@ -328,19 +328,27 @@ section#about-us {
 
 .counter-container {
     position: relative;
-    left: 11vw;
-    top: 68vh;
-    display: flex;
-    justify-content: space-around;
+    left: -4vw;
+    top: 8vh;    
+    text-align: center;
 }
 i.material-icons {
     font-size: 33px;
+
+}
+h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2.5vh;
 }
 .counter-description {
-    text-align: center;
-    font-size: 3vh;
+    margin-bottom: 5vh;
 }
-
+.coding-languages {
+    font-size: 2vh;
+    font-weight: 600;
+    font-family: 'Shadows Into Light', cursive;
+}
 /*This will be the index styles for landing page*/
     /*-------------------------------------------------------*/
     /*.landing-body{
