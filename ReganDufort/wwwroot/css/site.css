@@ -349,6 +349,15 @@ h6 {
     font-weight: 600;
     font-family: 'Shadows Into Light', cursive;
 }
+
+.carausel-container {
+    position: absolute;
+    border: 1px solid black;
+    top: 99vw;
+    width: 100%;
+    left: 0vw;
+    height: 98vh;
+}
 /*This will be the index styles for landing page*/
     /*-------------------------------------------------------*/
     /*.landing-body{
@@ -407,3 +416,53 @@ div#header {
     height: 7vw;
     position: fixed;
 }*/
+
+    /* css for the projects page*/
+
+.bd-example {
+    background: none;
+    width: 28vw;
+    height: 36vh;
+    margin-left: 5vw;
+}
+#carouselExampleCaptions {
+   
+    height: 100%;
+}
+.image-render {
+    height: 24vw;
+    width: 50vw;
+    position: absolute;
+    top: 5vw;
+    left: 18vw;
+    border: 0px solid black;
+    background-image: url(../NewSnip1.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.image-render1 {
+    height: 24vw;
+    width: 50vw;
+    position: absolute;
+    top: 5vw;
+    left: 18vw;
+    border: 0px solid black;
+    background-image: url(../NewSnip1.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: -5vw;
+    left: 39vw;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
